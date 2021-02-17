@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="sync_title">סנכרן דוא"ל</string>
+    <string name="attachment_title">הורד קבצים מצורפים נכנסים</string>
+    <string name="language_title">שפהת האפליקציה</string>
+    <string name="font_title">גודל גופן</string>
+    <string name="reply_title">"תשובה כברירת מחדל "</string>
+    <string name="MultiSelect_List">רשימה מרובת בחירות</string>
+    <string name="attachment_summary_on">" הורדה אוטומטית של קבצים מצורפים להודעות דוא\"ל נכנסות"</string>
+    <string name="attachment_summary_off">הורד קבצים מצורפים רק באופן ידני</string>
+    <string name="theme_title">ערכת נושא</string>
+    <string name="signature_title">החתימה שלך</string>
+    <string name="General_header">כללי</string>
+    <string name="display_header">תצוגה</string>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="display_header">"عرض "</string>
+    <string name="General_header">عام</string>
+    <string name="signature_title">توقيعك</string>
+    <string name="theme_title">تصميم الالوان</string>
+    <string name="sync_title">مزامنة البريد الإلكتروني</string>
+    <string name="attachment_title">"تنزيل المرفقات الواردة  "</string>
+    <string name="language_title">لغة التطبيق</string>
+    <string name="font_title">"حجم الخط "</string>
+    <string name="reply_title">إجراء الرد الافتراضي</string>
+    <string name="MultiSelect_List">"قائمة متعددة الاختيارات "</string>
+    <string name="attachment_summary_on">"قم بتنزيل المرفقات تلقائيًا لرسائل البريد الإلكتروني الواردة "</string>
+    <string name="attachment_summary_off">قم بتنزيل المرفقات يدويًا فقط</string>
+</resources>

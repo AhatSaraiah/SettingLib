@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Setting</string>
+    <string name="action_settings" tools:ignore="MissingTranslation">Settings</string>
+
+
+    <string name="display_text" tools:ignore="MissingTranslation">"Display "</string>
+    <string name="change_text_color" tools:ignore="MissingTranslation">Change Text Color</string>
+    <string name="text_size" tools:ignore="MissingTranslation">Text Size</string>
+
+=
+</resources>

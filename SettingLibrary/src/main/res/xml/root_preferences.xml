@@ -1,0 +1,89 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory app:title="@string/display_header">
+
+        <EditTextPreference
+            app:key="signature"
+            app:title="@string/signature_title"
+            app:useSimpleSummaryProvider="true" />
+
+
+        <ListPreference
+            app:defaultValue="System default"
+            app:entries="@array/themes"
+            app:entryValues="@array/themes"
+            app:key="theme"
+            app:title="@string/theme_title"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/General_header">
+
+        <SwitchPreferenceCompat
+            app:key="sync"
+            app:title="@string/sync_title" />
+        <SwitchPreferenceCompat
+            app:dependency="sync"
+            app:key="attachment"
+            app:summaryOff="@string/attachment_summary_off"
+            app:summaryOn="@string/attachment_summary_on"
+            app:title="@string/attachment_title" />
+
+
+        <EditTextPreference
+            app:key="edit_text_preference"
+            app:defaultValue="Default value"
+            app:title="EditTextPreference"
+            app:useSimpleSummaryProvider="true"/>
+
+        <ListPreference
+            app:key="list_preference"
+            app:title="@string/language_title"
+            app:entries="@array/languages"
+            app:entryValues="@array/select_values"
+            app:defaultValue="en"
+            app:useSimpleSummaryProvider="true" />
+
+<!--        <MultiSelectListPreference-->
+<!--            app:key="multi_select_list_preference"-->
+<!--            app:title="@string/MultiSelect_List"-->
+<!--            app:entries="@array/values"-->
+<!--            android:persistent="true"-->
+<!--            app:entryValues="@array/select_values"-->
+<!--            />-->
+
+        <CheckBoxPreference
+            app:key="checkbox_preference"
+            app:title="Checkbox Preference"
+            app:defaultValue="true"
+            app:summaryOn="On"
+            app:summaryOff="Off"/>
+
+
+        <DropDownPreference
+            app:key="drop_down_preference"
+            app:title="DropDown Preference"
+            app:entries="@array/values"
+            app:entryValues="@array/select_values"
+            app:defaultValue="3"
+            app:useSimpleSummaryProvider="true"/>
+
+        <SeekBarPreference
+            app:key="seek_bar_preference"
+            app:title="@string/font_title"
+            app:summary="Summary"
+            app:min="1"
+            android:max="30"
+            app:showSeekBarValue="true"
+            app:defaultValue="22"/>
+
+        <SeekBarPreference
+            app:key="seek_bar"
+            app:title="SeekBar Preference"
+            app:summary="Summary"
+         />
+    </PreferenceCategory>
+</PreferenceScreen>
+
