@@ -13,4 +13,12 @@
     <string name="MultiSelect_List">"قائمة متعددة الاختيارات "</string>
     <string name="attachment_summary_on">"قم بتنزيل المرفقات تلقائيًا لرسائل البريد الإلكتروني الواردة "</string>
     <string name="attachment_summary_off">قم بتنزيل المرفقات يدويًا فقط</string>
+    <string name="edit_txt_pref">نص متغير</string>
+    <string name="summary_on">تشغيل</string>
+    <string name="summary_off">ايقاف</string>
+    <string name="summary">ملخص</string>
+    <string name="seek_bar_preference">شريط تفضيل</string>
+    <string name="drop_down_preference">اختر القيمة</string>
+    <string name="check_box_preference">خانةاختيار</string>
+
 </resources>

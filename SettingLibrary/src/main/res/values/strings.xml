@@ -1,17 +1,14 @@
 <resources>
     <string name="title_activity_settings">SettingsActivity</string>
 
-    <!-- Preference Titles -->
     <string name="display_header">Display</string>
     <string name="General_header">General</string>
 
-    <!-- Display Preferences -->
     <string name="signature_title">Your signature</string>
     <string name="theme_title">Theme</string>
 
     <string name="reply_title">Default reply action</string>
 
-    <!-- General Preferences -->
     <string name="sync_title">Sync email periodically</string>
     <string name="attachment_title">Download incoming attachments</string>
     <string name="language_title">App language</string>
@@ -21,5 +18,12 @@
     <string name="attachment_summary_on">Automatically download attachments for incoming emails
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="edit_txt_pref">EditTextPreference</string>
+    <string name="summary">Summary</string>
+    <string name="summary_on">On</string>
+    <string name="summary_off">Off</string>
+    <string name="seek_bar_preference">SeekBar Preference</string>
+    <string name="drop_down_preference">DropDown Preference</string>
+    <string name="check_box_preference">Checkbox Preference"</string>
 
 </resources>

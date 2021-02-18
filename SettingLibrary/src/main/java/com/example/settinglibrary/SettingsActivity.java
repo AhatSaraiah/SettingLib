@@ -1,5 +1,6 @@
 package com.example.settinglibrary;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -10,25 +11,26 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 
 public class SettingsActivity extends AppCompatActivity implements PreferenceFragmentCompat.OnPreferenceStartFragmentCallback {
+    private String initialLocale;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Intent intent= getIntent();
+        initialLocale = LocaleHelper.getPersistedLocale(this);
+        Intent intent = getIntent();
         Bundle b = intent.getExtras();
-        boolean j=false;
-        if(b!=null)
-             j =(boolean) b.get("xml_value");
+        boolean xml = false;
+        if (b != null)
+            xml = (boolean) b.get("xml_value");
         setContentView(R.layout.settings_activity);
-            if (savedInstanceState == null) {
-                if(j==true) {
+        if (savedInstanceState == null) {
+            if (xml == true) {
 
-                    getSupportFragmentManager()
+                getSupportFragmentManager()
                         .beginTransaction()
                         .replace(R.id.settings, new SettingsFragment(), "MY_FRAGMENT")
                         .commit();
-            }
-        else{
+            } else {
                 getSupportFragmentManager()
                         .beginTransaction()
                         .replace(R.id.settings, new ProgSettingsFragement(), "FRAGMENT")
@@ -43,10 +45,6 @@ public class SettingsActivity extends AppCompatActivity implements PreferenceFra
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
-
-//        SharedPreferences sharedPreferences =
-//                PreferenceManager.getDefaultSharedPreferences(this );
-//                String name = sharedPreferences.getString("signature", "");
     }
 
     @Override
@@ -67,19 +65,16 @@ public class SettingsActivity extends AppCompatActivity implements PreferenceFra
         return true;
     }
 
-////        public void setLocale(String lang) {
-////            Locale myLocale = new Locale(lang);
-////            Resources res = getResources();
-////            DisplayMetrics dm = res.getDisplayMetrics();
-////            Configuration conf = res.getConfiguration();
-////            conf.locale = myLocale;
-////            res.updateConfiguration(conf, dm);
-////            Intent refresh = new Intent(this, SettingsActivity.class);
-////            finish();
-////            startActivity(refresh);
-////        }
-//    }
-//
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(LocaleHelper.onAttach(base));
+    }
 
-
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (initialLocale != null && !initialLocale.equals(LocaleHelper.getPersistedLocale(this))) {
+            recreate();
+        }
+    }
 }

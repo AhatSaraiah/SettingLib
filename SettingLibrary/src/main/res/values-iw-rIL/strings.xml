@@ -3,7 +3,7 @@
     <string name="title_activity_settings">SettingsActivity</string>
     <string name="sync_title">סנכרן דוא"ל</string>
     <string name="attachment_title">הורד קבצים מצורפים נכנסים</string>
-    <string name="language_title">שפהת האפליקציה</string>
+    <string name="language_title">שפת האפליקציה</string>
     <string name="font_title">גודל גופן</string>
     <string name="reply_title">"תשובה כברירת מחדל "</string>
     <string name="MultiSelect_List">רשימה מרובת בחירות</string>
@@ -13,4 +13,12 @@
     <string name="signature_title">החתימה שלך</string>
     <string name="General_header">כללי</string>
     <string name="display_header">תצוגה</string>
+    <string name="edit_txt_pref">שנה טקסט</string>
+    <string name="summary">תמצית</string>
+    <string name="summary_on">הפעל</string>
+    <string name="summary_off">כבה</string>
+    <string name="seek_bar_preference"> </string>
+    <string name="drop_down_preference">בחר ערך</string>
+    <string name="check_box_preference">תיבת סימון </string>
+
 </resources>

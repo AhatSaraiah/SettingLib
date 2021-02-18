@@ -10,8 +10,9 @@ import androidx.appcompat.widget.Toolbar;
 
 import com.example.settinglibrary.SettingsActivity;
 
-public class MainActivity extends AppCompatActivity   {
-boolean xml=false;
+public class MainActivity extends AppCompatActivity {
+    boolean xml = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,23 +28,25 @@ boolean xml=false;
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
         int id = item.getItemId();
 
         if (id == R.id.action_settings) {
-            xml=true;
+            xml = true;
             getActivity(xml);
 
             return true;
-        }else if (id == R.id.action_settings2) {
-            xml=false;
+        } else if (id == R.id.action_settings2) {
+            xml = false;
             getActivity(xml);
-          //  ProgSettingsFragement progSettingsFragement =new ProgSettingsFragement();
+            //  ProgSettingsFragement progSettingsFragement =new ProgSettingsFragement();
 
-          //  progSettingsFragement.addPref("feedback","Send feedback","Report technical issues or suggest new features");
-           // progSettingsFragement.addSwitchPref("notifications","Enable message notifications","");
+            //  progSettingsFragement.addPref("feedback","Send feedback","Report technical issues or suggest new features");
+            // progSettingsFragement.addSwitchPref("notifications","Enable message notifications","");
+
             return true;
         }
 
@@ -52,7 +55,7 @@ boolean xml=false;
 
     private void getActivity(boolean xml) {
         Intent k = new Intent(this, SettingsActivity.class);
-        k.putExtra("xml_value",xml);
+        k.putExtra("xml_value", xml);
         startActivity(k);
     }
 

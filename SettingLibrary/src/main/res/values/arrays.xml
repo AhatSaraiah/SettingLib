@@ -1,26 +1,25 @@
 <resources>
-    <!-- Reply Preference -->
-    <string-array name="reply_entries">
-        <item>Reply</item>
-        <item>Reply to all</item>
-    </string-array>
-
-    <string-array name="reply_values">
-        <item>reply</item>
-        <item>reply_all</item>
-    </string-array>
-
     <string-array name="languages">
         <item>English</item>
         <item>Hebrew</item>
         <item>Arabic</item>
         <item>Turkish</item>
     </string-array>
-
+    <string-array name="locales">
+        <item>en</item>
+        <item>he</item>
+        <item>ar</item>
+        <item>tr</item>
+    </string-array>
     <string-array name="themes">
         <item>System default</item>
         <item>Light</item>
         <item>Dark</item>
+    </string-array>
+    <string-array name="theme_value">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
     </string-array>
     <string-array name="values">
         <item>value1</item>

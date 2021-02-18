@@ -3,12 +3,6 @@
 
     <PreferenceCategory app:title="@string/display_header">
 
-        <EditTextPreference
-            app:key="signature"
-            app:title="@string/signature_title"
-            app:useSimpleSummaryProvider="true" />
-
-
         <ListPreference
             app:defaultValue="System default"
             app:entries="@array/themes"
@@ -17,9 +11,20 @@
             app:title="@string/theme_title"
             app:useSimpleSummaryProvider="true" />
 
+
+        <EditTextPreference
+            app:defaultValue="Default value"
+            app:key="edit_text_preference"
+            app:title="@string/edit_txt_pref"
+            app:useSimpleSummaryProvider="true" />
+
     </PreferenceCategory>
 
     <PreferenceCategory app:title="@string/General_header">
+        <EditTextPreference
+            app:key="signature"
+            app:title="@string/signature_title"
+            app:useSimpleSummaryProvider="true" />
 
         <SwitchPreferenceCompat
             app:key="sync"
@@ -32,16 +37,10 @@
             app:title="@string/attachment_title" />
 
 
-        <EditTextPreference
-            app:defaultValue="Default value"
-            app:key="edit_text_preference"
-            app:title="EditTextPreference"
-            app:useSimpleSummaryProvider="true" />
-
         <ListPreference
             app:defaultValue="en"
             app:entries="@array/languages"
-            app:entryValues="@array/select_values"
+            app:entryValues="@array/locales"
             app:key="languages_list"
             app:title="@string/language_title"
             app:useSimpleSummaryProvider="true" />
@@ -57,18 +56,9 @@
         <CheckBoxPreference
             app:defaultValue="true"
             app:key="checkbox_preference"
-            app:summaryOff="Off"
-            app:summaryOn="On"
-            app:title="Checkbox Preference" />
-
-
-        <DropDownPreference
-            app:defaultValue="3"
-            app:entries="@array/values"
-            app:entryValues="@array/select_values"
-            app:key="drop_down_preference"
-            app:title="DropDown Preference"
-            app:useSimpleSummaryProvider="true" />
+            app:summaryOff="@string/summary_off"
+            app:summaryOn="@string/summary_on"
+            app:title="@string/check_box_preference" />
 
         <SeekBarPreference
             android:max="30"
@@ -76,13 +66,13 @@
             app:key="seek_bar_preference"
             app:min="1"
             app:showSeekBarValue="true"
-            app:summary="Summary"
+            app:summary="@string/summary"
             app:title="@string/font_title" />
 
         <SeekBarPreference
             app:key="seek_bar"
-            app:summary="Summary"
-            app:title="SeekBar Preference" />
+            app:summary="@string/summary"
+            app:title="@string/seek_bar_preference" />
     </PreferenceCategory>
 
 </PreferenceScreen>

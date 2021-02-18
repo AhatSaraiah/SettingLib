@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="languages">
+        <item>אנגלית</item>
+        <item>עברית</item>
+        <item>ערבית</item>
+        <item>טורקית</item>
+    </string-array>
+    <string-array name="locales">
+        <item>en</item>
+        <item>he</item>
+        <item>ar</item>
+        <item>tr</item>
+    </string-array>
+    <string-array name="themes">
+        <item>ברירת מחדל</item>
+        <item>מצב רגיל</item>
+        <item> מצב לילה</item>
+    </string-array>
+    <string-array name="values">
+        <item>ערך1</item>
+        <item>ערך2</item>
+        <item>ערך3</item>
+        <item>ערך4</item>
+        <item>ערך5</item>
+        <item>ערך6</item>
+        <item>ערך7</item>
+    </string-array>
+    <string-array name="select_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="theme_value">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="default_values">
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+</resources>
