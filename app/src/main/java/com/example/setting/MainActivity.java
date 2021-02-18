@@ -42,11 +42,6 @@ public class MainActivity extends AppCompatActivity {
         } else if (id == R.id.action_settings2) {
             xml = false;
             getActivity(xml);
-            //  ProgSettingsFragement progSettingsFragement =new ProgSettingsFragement();
-
-            //  progSettingsFragement.addPref("feedback","Send feedback","Report technical issues or suggest new features");
-            // progSettingsFragement.addSwitchPref("notifications","Enable message notifications","");
-
             return true;
         }
 
