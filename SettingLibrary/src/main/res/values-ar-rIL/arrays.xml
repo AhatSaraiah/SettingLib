@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="languages">
+        <item>انجليزي</item>
+        <item>عبري</item>
+        <item>عربي</item>
+        <item>تركي</item>
+    </string-array>
+    <string-array name="locales">
+        <item>en</item>
+        <item>he</item>
+        <item>ar</item>
+        <item>tr</item>
+    </string-array>
+    <string-array name="themes">
+        <item>النظام الافتراضي</item>
+        <item>ضوء نهار </item>
+        <item>ليلي</item>
+    </string-array>
+    <string-array name="values">
+        <item>قيمة1</item>
+        <item>قيمة2</item>
+        <item>قيمة3</item>
+        <item>قيمة4</item>
+        <item>قيمة5</item>
+        <item>قيمة6</item>
+        <item>قيمة7</item>
+    </string-array>
+    <string-array name="theme_value">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="select_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="default_values">
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+</resources>
