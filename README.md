@@ -1,5 +1,5 @@
 # SettingLib
-A library to create settings page
+A library to create settings 
 
 
 ##  Setup
