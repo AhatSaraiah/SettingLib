@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Setting</string>
+    <string name="action_settings">اعدادات</string>
+    <string name="action_settings_">اعدادات</string>
+    <string name="display_text">هيئة العرض</string>
 </resources>

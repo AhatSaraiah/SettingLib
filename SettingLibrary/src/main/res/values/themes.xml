@@ -23,5 +23,4 @@
 
     <style name="Theme.Setting.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-
 </resources>
